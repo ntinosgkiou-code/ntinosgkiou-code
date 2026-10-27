@@ -15,7 +15,7 @@ A dry run for AI coding agents: one command reads the Claude Code sessions on yo
 git clone https://github.com/ntinosgkiou-code/agentdryrun && cd agentdryrun && python -m agentdryrun scan
 ```
 
-### [Ran-Tevu](https://github.com/ntinosgkiou-code/yc-app)
+### [Ran-Tevu](https://github.com/ntinosgkiou-code/ran-tevu)
 AI booking and back-office platform for Greek clinics: patients book through an AI chat, the clinic gets patient files, invoicing with Greek VAT rules, a consent-gated no-show recovery loop, Stripe billing, an AI voice receptionist and a FHIR R4 bridge. About 39,500 lines of Python, 64 test files.
 *Portfolio project: it was offered to Greek clinics, did not reach paying customers, and has been offline since October 2026.*
 
