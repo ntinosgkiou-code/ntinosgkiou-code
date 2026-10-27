@@ -17,7 +17,7 @@ git clone https://github.com/ntinosgkiou-code/agentdryrun && cd agentdryrun && p
 
 ### [Ran-Tevu](https://github.com/ntinosgkiou-code/yc-app)
 AI booking and back-office platform for Greek clinics: patients book through an AI chat, the clinic gets patient files, invoicing with Greek VAT rules, a consent-gated no-show recovery loop, Stripe billing, an AI voice receptionist and a FHIR R4 bridge. About 39,500 lines of Python, 64 test files.
-*Portfolio project: it was piloted with Greek clinics, did not reach paying customers, and has been offline since October 2026.*
+*Portfolio project: it was offered to Greek clinics, did not reach paying customers, and has been offline since October 2026.*
 
 ### Other
 - **[mcp-agent](https://github.com/ntinosgkiou-code/mcp-agent)**: an MCP server that gives Claude live football odds and team form, and flags matches where the market price and a naive form model disagree. A demonstration of MCP tool calling, not a betting signal.
