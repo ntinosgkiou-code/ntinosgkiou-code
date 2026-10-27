@@ -1,13 +1,23 @@
-# Hi
+# Konstantinos
 
-I build small, useful open-source tools for people who run AI coding agents.
+Athens. I build tools around one question: **what did an AI agent actually do, and can you prove it?** Numbers come with their limits, mistakes included.
 
-**Now: [agentdryrun](https://github.com/ntinosgkiou-code/agentdryrun)**, a dry run on your own coding agent's history. One command reads the Claude Code sessions on your machine and shows which commands your rules would have stopped: recursive deletes, force pushes, `curl | sh`, secret files read, uploads. Read-only, local, zero dependencies.
+## Projects
+
+### [OmniOS](https://github.com/ntinosgkiou-code/omnios) · agentdryrun Gateway
+Make AI agents ask before they act, and keep a record nobody can quietly edit: per-customer rules, four-eyes approvals, a signed append-only log (RFC 9162 Merkle tree, Ed25519 checkpoints), independent witnesses that refuse a rewritten history, and evidence packs a third party verifies offline. FastAPI service, browser UI, Python SDK, CLI, Docker, 175 tests in CI.
+*Portfolio project, development paused. Never used with a real customer; the known gaps are listed in [KNOWN-LIMITS](https://github.com/ntinosgkiou-code/omnios/blob/main/docs/KNOWN-LIMITS.md).*
+
+### [agentdryrun](https://github.com/ntinosgkiou-code/agentdryrun) · open source, Apache-2.0
+A dry run for AI coding agents: one command reads the Claude Code sessions on your machine and shows which commands your rules would have stopped (recursive deletes, force pushes, `curl | sh`, secret files read, uploads). Read-only, local, zero dependencies. Checked on 2,000 public agent runs: 14 of my first 49 alarms were my own bugs, and they are fixed ([how](https://github.com/ntinosgkiou-code/agentdryrun/blob/main/docs/VALIDATION-PUBLIC-RUNS.md)).
 
 ```bash
 git clone https://github.com/ntinosgkiou-code/agentdryrun && cd agentdryrun && python -m agentdryrun scan
 ```
 
-Or inside Claude Code: `claude plugin marketplace add ntinosgkiou-code/agentdryrun`, then `claude plugin install agentdryrun@agentdryrun` and `/agentdryrun:scan`.
+### Other
+- **[mcp-agent](https://github.com/ntinosgkiou-code/mcp-agent)**: an MCP server that gives Claude live football odds and team form, and flags matches where the market price and a naive form model disagree. A demonstration of MCP tool calling, not a betting signal.
+- **[payout-to-pnl](https://github.com/ntinosgkiou-code/payout-to-pnl)**: a Claude plugin that turns Etsy, Shopify, PayPal and eBay payout exports into a monthly P&L, with all arithmetic in plain Python.
 
-It is a prototype and the [build log](https://github.com/ntinosgkiou-code/agentdryrun/blob/main/BUILD-LOG.md) records what worked and what was wrong. If you try it on your own history, the most useful thing you can send is where it is wrong: [open an issue](https://github.com/ntinosgkiou-code/agentdryrun/issues).
+## How I work
+The [build log](https://github.com/ntinosgkiou-code/agentdryrun/blob/main/BUILD-LOG.md) records what worked and what was wrong. Questions or bug reports: open an issue in the relevant repository.
