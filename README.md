@@ -1,56 +1,41 @@
-# Konstantinos · On-chain strategy & risk validation
+# Konstantinos · AI automation engineer
 
-Athens · independent · fixed-scope engagements
+Athens · independent · fixed-scope work · NDA and white-label friendly
 
-Before you put capital into a strategy, a bot or a token, I find out whether it holds up against **real fees, latency and adversarial conditions**, and I hand you the evidence, not an opinion.
-I don't sell trading signals or profit promises.
+I build AI automations and agent workflows that are **tested, guarded and handed over with evidence**, so they keep working after the demo.
+I work in two ways: as **delivery capacity for agencies and integrators** who sell AI solutions to their clients, and **directly with companies** that have one specific, costly manual process to automate.
 
-## What you can hire me for
+## What I deliver
 
-| The problem | What you get | Timing |
-|-------------|--------------|--------|
-| *"Does this strategy actually make money after costs?"* | A **Strategy Reality Check**: a pre-registered backtest on real on-chain data (Base; Uniswap, Aerodrome) with LP fees, L2 gas and data fee, execution delay and stress tests, ending in a **GO / NO-GO** verdict, a written report and reproducible code | about 5 working days |
-| *"Is this token safe to trade?"* | A **pre-trade safety check** for your bot or UI: honeypot and tax simulation, LP lock, ownership, proxy and holder-concentration checks. It refuses whenever it is in doubt | scoped per project |
-| *"Why does my live result leak versus the backtest?"* | An **execution-friction diagnosis**: fee tiers, slippage, gas including the L2 data fee, latency modelling, and the exact assumptions that broke | scoped per project |
-| *"I need a bot that does not blow up."* | A **Base/EVM bot** with fail-closed safety, a paper mode, tests and a fork test, delivered as code you own | scoped per project |
+| You need | What you get |
+|----------|--------------|
+| **A delivery partner** (agency / integrator) | The AI automations and integrations you sold, built under your brand: agent workflows, voice and booking assistants, approval gates, billing and data integrations. Fixed scope, written acceptance criteria, tests, handover docs |
+| **One costly process automated** (company) | A scoped project with a measurable acceptance test, human approval where actions are risky, and a record of what the automation did |
+| **To know it works before it goes live** | A reality check on an automation, an agent or a strategy: pre-registered pass/fail criteria, real data, a written verdict and reproducible code |
 
-## Proof: [Base-QuantLab](https://github.com/ntinosgkiou-code/base-quantlab)
+## Selected work, grouped by what it proves
 
-I built an on-chain quant lab and used it on myself: **14 pre-registered strategy configurations from six families were tested on real Base data, and none passed.**
-Pass/fail gates were written before any result, ideas ran once on unseen windows, intervals were clustered by day, and the confidence level tightened as hypotheses piled up.
+### Build: end-to-end AI products
+**[Ran-Tevu](https://github.com/ntinosgkiou-code/ran-tevu)** · AI booking and back-office platform for clinics: patients book through an AI chat, invoicing with Greek VAT rules, a consent-gated no-show recovery loop, Stripe billing, an AI voice receptionist and a FHIR R4 bridge. About 39,500 lines of Python, 64 test files.
+*Portfolio project, offline since October 2026; it did not reach paying customers.*
 
-- **The outcome:** the answer was *no*, found in hours, with real data and no capital at risk. That is what a reality check is for.
-- **Real-world modelling:** next-block fills on real pool reserves, the L2 data fee, and Base's move from 2 s to 0.2 s blocks located inside the data by bisection.
-- **Safety infrastructure:** a fail-closed token validator, a state machine that freezes on latency spikes or reorgs, and a local mainnet-fork test with fake ETH (13 checks). 55 offline tests in CI.
-- **Honest limits:** survivorship bias, approximations and what was *not* proven are stated in the repo.
+### Guard: control and evidence for AI agents
+**[agentdryrun](https://github.com/ntinosgkiou-code/agentdryrun)** · open source, Apache-2.0. A dry run for coding agents: reads your Claude Code sessions and shows which commands your rules would have stopped. Checked on 2,000 public agent runs: 14 of my first 49 alarms were my own bugs, and they are fixed ([how](https://github.com/ntinosgkiou-code/agentdryrun/blob/main/docs/VALIDATION-PUBLIC-RUNS.md)).
+**[OmniOS](https://github.com/ntinosgkiou-code/omnios)** · four-eyes approvals and a signed, append-only log for AI agents, with evidence packs a third party verifies offline. 175 tests in CI. *Portfolio project; known gaps in [KNOWN-LIMITS](https://github.com/ntinosgkiou-code/omnios/blob/main/docs/KNOWN-LIMITS.md).*
 
-## What I don't do
+### Verify: test before you trust
+**[Base-QuantLab](https://github.com/ntinosgkiou-code/base-quantlab)** · a lab that tested 14 pre-registered strategy configurations on real on-chain data; none passed, which was found in hours instead of after a launch. Pass/fail gates written before results, fail-closed safety checks, 55 tests, [decision records](https://github.com/ntinosgkiou-code/base-quantlab/blob/main/docs/DECISIONS.md).
 
-- I don't guarantee profit, give financial advice, or replace a smart-contract security audit.
-- This is an early independent practice: I don't list past clients. Everything claimed here links to open code and data you can inspect.
+### Also
+**[token-tooling](https://github.com/ntinosgkiou-code/token-tooling)** · reference Solidity vesting and Merkle-airdrop contracts with fuzz and invariant tests. Unaudited.
 
 ## How I work
 
-Rules are written before results. Failures are published with the numbers. [Base-QuantLab's build log](https://github.com/ntinosgkiou-code/base-quantlab/blob/main/docs/BUILD-LOG.md) records what was done and in what order, and [DECISIONS](https://github.com/ntinosgkiou-code/base-quantlab/blob/main/docs/DECISIONS.md) records each design choice, the alternative I rejected and what it costs. The [agentdryrun build log](https://github.com/ntinosgkiou-code/agentdryrun/blob/main/BUILD-LOG.md) does the same for that project.
+- **Fixed scope and acceptance criteria in writing** before any build starts.
+- **Small steps, tests, and a handover document** you can give to your own team or client.
+- **Risky actions get a human approval gate** and every action leaves a record.
+- **I say what I did not prove.** Every repo above lists its limits.
 
-## Contact
+## Work with me
 
-Open an issue titled **`Reality check`** in [base-quantlab](https://github.com/ntinosgkiou-code/base-quantlab/issues), or in the repository closest to your question.
-
----
-
-## More open work
-
-### [OmniOS](https://github.com/ntinosgkiou-code/omnios) · agentdryrun Gateway
-Make AI agents ask before they act, and keep a record nobody can quietly edit: per-customer rules, four-eyes approvals, a signed append-only log (RFC 9162 Merkle tree, Ed25519 checkpoints), independent witnesses that refuse a rewritten history, and evidence packs a third party verifies offline. FastAPI service, browser UI, Python SDK, CLI, Docker, 175 tests in CI.
-*Portfolio project, development paused. Never used with a real customer; the known gaps are listed in [KNOWN-LIMITS](https://github.com/ntinosgkiou-code/omnios/blob/main/docs/KNOWN-LIMITS.md).*
-
-### [agentdryrun](https://github.com/ntinosgkiou-code/agentdryrun) · open source, Apache-2.0
-A dry run for AI coding agents: one command reads the Claude Code sessions on your machine and shows which commands your rules would have stopped (recursive deletes, force pushes, `curl | sh`, secret files read, uploads). Read-only, local, zero dependencies. Checked on 2,000 public agent runs: 14 of my first 49 alarms were my own bugs, and they are fixed ([how](https://github.com/ntinosgkiou-code/agentdryrun/blob/main/docs/VALIDATION-PUBLIC-RUNS.md)).
-
-### [Ran-Tevu](https://github.com/ntinosgkiou-code/ran-tevu)
-AI booking and back-office platform for Greek clinics: patients book through an AI chat, the clinic gets patient files, invoicing with Greek VAT rules, a consent-gated no-show recovery loop, Stripe billing, an AI voice receptionist and a FHIR R4 bridge. About 39,500 lines of Python, 64 test files.
-*Portfolio project: it was offered to Greek clinics, did not reach paying customers, and has been offline since October 2026.*
-
-### [token-tooling](https://github.com/ntinosgkiou-code/token-tooling)
-Reference Solidity vesting and Merkle-airdrop contracts with fuzz and invariant tests (Foundry). Unaudited.
+Open an issue titled **`Project`** in [Base-QuantLab](https://github.com/ntinosgkiou-code/base-quantlab/issues) or write to the address below.
