@@ -31,7 +31,7 @@ Pass/fail gates were written before any result, ideas ran once on unseen windows
 
 ## How I work
 
-Rules are written before results. Failures are published with the numbers. I develop with an AI pair-programmer and say so: [Base-QuantLab's build log](https://github.com/ntinosgkiou-code/base-quantlab/blob/main/docs/BUILD-LOG.md) records what was done and in what order, and [DECISIONS](https://github.com/ntinosgkiou-code/base-quantlab/blob/main/docs/DECISIONS.md) records each design choice, the alternative I rejected and what it costs. The [agentdryrun build log](https://github.com/ntinosgkiou-code/agentdryrun/blob/main/BUILD-LOG.md) does the same for that project.
+Rules are written before results. Failures are published with the numbers. [Base-QuantLab's build log](https://github.com/ntinosgkiou-code/base-quantlab/blob/main/docs/BUILD-LOG.md) records what was done and in what order, and [DECISIONS](https://github.com/ntinosgkiou-code/base-quantlab/blob/main/docs/DECISIONS.md) records each design choice, the alternative I rejected and what it costs. The [agentdryrun build log](https://github.com/ntinosgkiou-code/agentdryrun/blob/main/BUILD-LOG.md) does the same for that project.
 
 ## Contact
 
