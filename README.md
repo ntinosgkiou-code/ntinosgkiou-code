@@ -38,4 +38,5 @@ I work in two ways: as **delivery capacity for agencies and integrators** who se
 
 ## Work with me
 
-Open an issue titled **`Project`** in [Base-QuantLab](https://github.com/ntinosgkiou-code/base-quantlab/issues) or write to the address below.
+Email: **ntinosgkiou@gmail.com**
+or open an issue titled **`Project`** in [Base-QuantLab](https://github.com/ntinosgkiou-code/base-quantlab/issues).
