@@ -27,6 +27,7 @@ I work in two ways: as **delivery capacity for agencies and integrators** who se
 **[Base-QuantLab](https://github.com/ntinosgkiou-code/base-quantlab)** · a lab that tested 14 pre-registered strategy configurations on real on-chain data; none passed, which was found in hours instead of after a launch. Pass/fail gates written before results, fail-closed safety checks, 55 tests, [decision records](https://github.com/ntinosgkiou-code/base-quantlab/blob/main/docs/DECISIONS.md).
 
 ### Also
+**[voiceover-sync-skill](https://github.com/ntinosgkiou-code/voiceover-sync-skill)** · open source, MIT. A Claude Code skill that syncs a voiceover to a screen recording so every click lands on its spoken word, with burned-in captions, chapters and an automatic QA report. On a real onboarding video: 10 of 10 clicks within 0.4 s of their cue word, no freezes over 1.5 s. *Needs ffmpeg and faster-whisper; timeline anchors are still picked by the agent, not fully automatic.*
 **[token-tooling](https://github.com/ntinosgkiou-code/token-tooling)** · reference Solidity vesting and Merkle-airdrop contracts with fuzz and invariant tests. Unaudited.
 
 ## How I work
